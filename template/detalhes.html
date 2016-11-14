@@ -1,0 +1,31 @@
+<h1>Detalhes do Inscrito</h1>
+{{#inscricaoConfirmada}}
+<div class="alert alert-success" role="alert"><strong>Confirmada: </strong>Inscrição paga.</div>{{/inscricaoConfirmada}} {{^inscricaoConfirmada}}
+<div class="alert alert-danger" role="alert"><strong>Inscrição Pendente: </strong>Cobrar R$ 100,00 para a entrada.</div>{{/inscricaoConfirmada}}
+
+<blockquote>
+    <p id="nomeInscrito" data-id="{{id}}"><strong>{{cid}}</strong> - {{nome}}</p>
+    <small class="member">
+                <i class="flaticon-house"></i> Capítulo:{{#capituloNro}} {{capitulo}}, nº {{capituloNro}} {{/capituloNro}} {{^capituloNro}} Não informado {{/capituloNro}}<br />
+                <i class="flaticon-circus"></i> Convento:{{#conventoNro}} {{convento}}, nº {{conventoNro}} {{/conventoNro}} {{^conventoNro}} Não informado {{/conventoNro}}<br />
+                <i class="flaticon-compass-1"></i> Maçom: {{#macom}} {{macom}}{{/macom}} {{^macom}} Não{{/macom}}<br />
+    
+                    <i class="flaticon-id-card"></i> CID/Código: {{cid}}<br>
+                    <i class="flaticon-birthday-cake"></i> Data de Nascimento: {{dataNascimento}} - <strong>{{idade}} anos</strong>
+                <br />
+                    <i class="flaticon-back"></i> E-mail: {{email}} <br>
+                    <i class="flaticon-technology"></i> Telefone: {{telefone}}
+                <br />
+                    <i class="flaticon-clothes"></i> Camiseta: {{tamanhoCamiseta}} <br>
+                    <i class="flaticon-diploma"></i> Grau Pretendido: {{grauDesejado}}
+                <br />
+                <h4>Dados de Pagamento</h4>
+                    Data da Inscrição: <strong>{{dataInscricao}}</strong><br>
+                    Data do Pagamento: <strong>{{#inscricaoConfirmada}}{{cb_liquidada}}{{/inscricaoConfirmada}}{{^inscricaoConfirmada}}<span class="text-danger">Não Liquidada</span>{{/inscricaoConfirmada}}</strong><br>
+                    Valor Pago: R$ <strong>{{#cb_valor}}{{cb_valor}}{{/cb_valor}}{{^cb_valor}}0.00{{/cb_valor}}</strong><br>
+                    Camiseta: {{#camisetaConfirmada}}<span class="text-success">Camiseta Garantida - <strong>{{tamanhoCamiseta}}</strong></span>{{/camisetaConfirmada}}
+                    {{^camisetaConfirmada}}<span class="text-primary">Camiseta à Estoque - <strong>{{tamanhoCamiseta}}</strong></span>{{/camisetaConfirmada}}
+                    
+                
+            </small>
+</blockquote>

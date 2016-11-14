@@ -1,0 +1,47 @@
+{
+  "name": "Checkin no 37º CEOD SP",
+  "short_name": "CEOD CHECKIN"
+  "icons": [
+    {
+      "src": "./images/icons/icon-11.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": 0.75
+    },
+    {
+      "src": "./images/icons/icon-10.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": 1.0
+    },
+    {
+      "src": "./images/icons/icon-09.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": 1.5
+    },
+    {
+      "src": "./images/icons/icon-08.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": 2.0
+    },
+    {
+      "src": "./images/icons/icon-07.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": 3.0
+    },
+    {
+      "src": "./images/icons/icon-06.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": 4.0
+    }
+  ],
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#bfbfbf",
+  "orientation": "any",
+  "theme_color": "#bfbfbf"
+}

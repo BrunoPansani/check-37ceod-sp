@@ -1,0 +1,29 @@
+CACHE MANIFEST
+# 2016-11-11@V18
+
+# Explicitly cached 'master entries'.
+CACHE:	
+css/bootstrap.min.css	
+css/flaticon.css
+css/fonts_google.css
+style.css	
+css/select2.css
+js/jquery.min.js
+js/jquery.mask.min.js	
+js/bootstrap.min.js	
+js/select2.full.js	
+js/mustache.js
+template/detalhes.html	
+fonts/Flaticon.woff	
+fonts/glyphicons-halflings-regular.woff
+template/opcoes_checkin.html
+favicon.ico
+images/logo_checkin.png
+
+FALLBACK:
+
+NETWORK:
+*
+ceod.appcache
+
+CACHE:

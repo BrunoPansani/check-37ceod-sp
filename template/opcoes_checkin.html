@@ -1,0 +1,36 @@
+<h1>Opções de Check-in</h1>
+{{#finalizado}}
+<div class="alert alert-danger" role="alert"><strong>Atenção: </strong>Este inscrito já efetuou check in, portanto só é possível fazer observações.</div>{{/finalizado}}
+<br/>
+<div class="row">
+    <div class="col-lg-12">
+
+        <div class="checkbox btn btn-default btn-block" {{#camiseta}} disabled {{/camiseta}} onclick="$('#camiseta').click();">
+            <input type="checkbox" id="camiseta" {{#camiseta}}checked disabled{{/camiseta}} value="1">Camiseta Retirada
+        </div>
+        <div class="checkbox btn btn-default btn-block" {{#epoc}} disabled {{/epoc}} onclick="$('#epoc').click();">
+            <input type="checkbox" id="epoc" {{#epoc}}checked disabled{{/epoc}} value="1">Inscrição EPOC
+        </div>
+        <div class="checkbox btn btn-default btn-block" {{#ca9}} disabled {{/ca9}} onclick="$('#ca9').click(); ">
+            <input type="checkbox" id="ca9" {{#ca9}}checked disabled{{/ca9}} value="1">Inscrição CA9
+        </div>
+        <div class="checkbox btn btn-default btn-block" {{#pgto_balcao}} disabled {{/pgto_balcao}} onclick="$('#pgto_balcao').click(); ">
+            <input type="checkbox" id="pgto_balcao" {{#pgto_balcao}}checked disabled{{/pgto_balcao}} value="1">Pago no Balcão (R$ 100,00)
+        </div>
+        <div class="checkbox btn btn-default btn-block" {{#menor}} disabled {{/menor}} onclick="$('#menor').click(); ">
+            <input type="checkbox" id="menor" {{#menor}}checked disabled{{/menor}} value="1">Autorização Entregue
+        </div>
+        <br>
+        <label for="" class="col-sm-2 control-label">Observações</label><br>
+        <textarea id="observacao" class="form-control" rows="3">{{observacao}}</textarea>
+
+        <br>
+        <br>
+        <button class="btn btn-success btn-block" onclick="finalizaCheckin(this.getAttribute('data-id'));" id="confirmarCheckin" data-id="{{id_checkin}}" type="submit">
+                    <span class="glyphicon glyphicon-ok"></span> {{#finalizado}}Alterar Check-in{{/finalizado}}{{^finalizado}}Confirmar Check-in{{/finalizado}}</button>
+
+    </div>
+</div>
+
+</div>
+        
